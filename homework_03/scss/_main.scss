@@ -1,0 +1,13 @@
+@mixin h($color, $margin-top) {
+  color: $color;
+  margin-top: $margin-top;
+}
+
+@mixin input($w, $p){
+  width: $w;
+  padding: $p;
+}
+
+@mixin border($color){
+  border-color: $color;
+}

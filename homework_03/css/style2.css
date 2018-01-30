@@ -1,0 +1,130 @@
+body {
+  background-color: #e0f6fd;
+  color: #fff;
+}
+
+#content {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3b3b3b;
+  padding: 20px 20px 20px 20px;
+}
+
+#content h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fccd10;
+  margin-top: 0px;
+}
+
+#content h2 {
+  color: #fccd10;
+  margin-top: 0px;
+}
+
+#content .img-left {
+  float: left;
+  padding: 2px;
+  border: 2px solid #fccd10;
+  margin-right: 20px;
+}
+
+#content .img-right {
+  float: right;
+  padding: 2px;
+  border: 2px solid #fccd10;
+  margin-left: 20px;
+}
+
+#content .brief {
+  float: left;
+  width: 920px;
+  background-color: #fff178;
+  color: #000;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+#content a {
+  color: #fccd10;
+}
+
+#content table {
+  border-collapse: collapse;
+  margin-bottom: 60px;
+}
+
+#content table caption {
+  text-align: right;
+  color: #000;
+}
+
+#content table tr {
+  border-bottom: 1px solid #94a34e;
+}
+
+#content table tr th {
+  background-color: #94a34e;
+  color: #000;
+  padding: 10px 10px 10px 20px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: normal;
+  border-right: 1px solid #fff;
+}
+
+#content table tr th:last-child {
+  border-right: none;
+}
+
+#content table tr td {
+  padding: 10px 10px 10px 20px;
+  background-color: #677d01;
+}
+
+#content form label {
+  text-transform: uppercase;
+  color: #fccd10;
+}
+
+#content form .name .half {
+  width: 49%;
+  float: left;
+}
+
+#content form .name .half:last-child {
+  float: right;
+}
+
+#content form .name .half input {
+  width: 100%;
+  padding: 3px;
+  border-color: #fccd10;
+}
+
+#content form input {
+  width: 100%;
+  padding: 4px;
+  border-color: #fccd10;
+  margin: 5px 0 15px 0;
+}
+
+#content form input[type="submit"] {
+  width: 240px;
+  height: 45px;
+  background-color: #3b3b3b;
+  border: 2px solid #fccd10;
+  color: #fccd10;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+#content form textarea {
+  width: 100%;
+  padding: 5px;
+  border-color: #fccd10;
+  height: 150px;
+  margin: 5px 0 15px 0;
+}
