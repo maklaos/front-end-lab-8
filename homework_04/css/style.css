@@ -1,0 +1,310 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+}
+
+header {
+  background-image: url("../img/apples.jpg");
+  color: #fff;
+  max-height: 740px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 5px;
+}
+
+header ul li a:hover {
+  border-bottom: 2px solid #b2c2d2;
+}
+
+header .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+header .flex-container > div {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+header .flex-container > div:first-child span {
+  padding-left: 25%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+header .flex-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+header .flex-container-2 > div {
+  text-align: center;
+  padding-top: 170px;
+}
+
+header .flex-container-2 > div h1 {
+  font-size: 3.7em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+header .flex-container-2 > div h1 span {
+  font-size: 1.7em;
+}
+
+header .flex-container-2 > div h1 sup {
+  font-size: 0.4em;
+}
+
+header button {
+  width: 230px;
+  height: 60px;
+  background-color: rgba(52, 54, 56, 0.6);
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#first .flex-container {
+  display: flex;
+  height: 360px;
+}
+
+#first .flex-container > div {
+  width: 50%;
+  align-self: center;
+}
+
+#first .flex-container > div:first-child p {
+  font-size: 2em;
+  padding-left: 25%;
+}
+
+#first .flex-container > div:first-child p span {
+  font-weight: bold;
+}
+
+#first .flex-container > div:last-child p {
+  width: 80%;
+}
+
+#featured {
+  background-color: #f3f3f3;
+  height: 100%;
+}
+
+#featured h1 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 145px;
+  padding-bottom: 75px;
+  margin: 0;
+}
+
+#featured h1 span {
+  font-weight: bold;
+}
+
+#featured .flex-container {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#featured .flex-container > div {
+  height: 300px;
+  margin: 10px;
+  background-size: cover;
+  color: #fff;
+}
+
+#featured .flex-container > div .like {
+  position: relative;
+}
+
+#featured .flex-container > div .like span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  border: 2px solid #fff;
+  background-color: rgba(52, 54, 56, 0.6);
+}
+
+#featured .flex-container > div h3 {
+  top: 240px;
+  left: 25px;
+  position: relative;
+}
+
+#featured .flex-container > div h3 span {
+  color: #d0d0d0;
+}
+
+#featured .flex-container .item1 {
+  flex-grow: 2;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.5)), url("../img/sample.jpg");
+  background-size: cover;
+}
+
+#featured .flex-container .item2 {
+  flex-grow: 1;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.5)), url("../img/sample2.jpg");
+  background-size: cover;
+}
+
+#featured .flex-container .item3 {
+  flex-grow: 2;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.5)), url("../img/sample3.jpg");
+  background-size: cover;
+}
+
+#featured .flex-container-subscribe {
+  display: flex;
+  justify-content: center;
+  width: 74%;
+  margin: 90px auto 180px auto;
+  padding: 70px 0 70px 0;
+  background-color: #fff;
+}
+
+#featured .flex-container-subscribe div:first-child {
+  width: 40%;
+  text-align: center;
+  align-self: center;
+}
+
+#featured .flex-container-subscribe div:last-child {
+  width: 60%;
+}
+
+#featured .flex-container-subscribe span {
+  font-size: 24px;
+}
+
+#featured .flex-container-subscribe input {
+  height: 51px;
+  width: 60%;
+  margin-right: 0;
+  padding-right: 0px;
+  border: 1px solid #343638;
+  background-color: #f3f3f3;
+  color: #000;
+}
+
+#featured .flex-container-subscribe input::placeholder {
+  color: #000;
+  padding-left: 5%;
+}
+
+#featured .flex-container-subscribe button {
+  margin-left: -5px;
+  padding: 0;
+  height: 55px;
+  width: 25%;
+  border: 1px solid #343638;
+  background-color: #343638;
+  color: #fff;
+}
+
+footer .flex-container {
+  display: flex;
+  width: 75%;
+  margin: 130px auto 0 auto;
+  border-bottom: 1px solid black;
+}
+
+footer .flex-container div {
+  width: 25%;
+  min-height: 312px;
+  padding-left: 5px;
+}
+
+footer .flex-container div p {
+  width: 70%;
+  color: #a9a9a9;
+}
+
+footer .flex-container div input {
+  height: 51px;
+  width: 60%;
+  margin-right: 0;
+  padding-right: 0px;
+  border: 1px solid #343638;
+  background-color: #f3f3f3;
+  color: #000;
+}
+
+footer .flex-container div input::placeholder {
+  padding-left: 5%;
+}
+
+footer .flex-container div button {
+  margin-left: -5px;
+  padding: 0;
+  height: 55px;
+  width: 30%;
+  border: 1px solid #343638;
+  background-color: #343638;
+  color: #fff;
+}
+
+footer .bottom {
+  width: 75%;
+  margin: 0 auto;
+}
+
+footer .bottom div {
+  padding: 25px 0 25px 0;
+}
+
+footer .bottom .left {
+  float: left;
+}
+
+footer .bottom .left span {
+  color: #a9a9a9;
+}
+
+footer .bottom .right {
+  float: right;
+}
+
+footer .bottom .right ul {
+  list-style: none;
+  margin: 0;
+}
+
+footer .bottom .right ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+footer .bottom .right ul li a {
+  text-decoration: none;
+  color: #000;
+}
