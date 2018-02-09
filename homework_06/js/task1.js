@@ -1,9 +1,9 @@
-var a = +prompt("Enter a lenght");
-var b = +prompt("Enter b lenght");
-var c = +prompt("Enter c lenght");
+var a = parseFloat(prompt("Enter a lenght"));
+var b = parseFloat(prompt("Enter b lenght"));
+var c = parseFloat(prompt("Enter c lenght"));
 
 var p = (a + b + c) / 2;
-var s = +Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(2);
+var s = Number(Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(2));
 
 if (s <= 0) {
   console.log('Incorrect data');
