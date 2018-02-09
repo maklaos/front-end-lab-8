@@ -1,7 +1,7 @@
 let N = 0;
 
 while (N <= 0 || N > 20 || !Number.isInteger(N)) {
-  N = +prompt('Enter natural number between 1 and 20');
+  N = Number(prompt('Enter natural number between 1 and 20'));
 }
 
 let space = '   ';
