@@ -25,16 +25,19 @@ if (start) {
 
     if (userInput == numberToGuess) {
       prize += currentAttemptPrize;
-    } else {
-      break;
-    }
+      isPlaying = confirm('Are you whant to continue a game?');
 
-    isPlaying = confirm('Are you whant to continue a game?');
+      if (!isPlaying) {
+        console.log('Thank you for a game. Your prize is: ' + prize + '$');
+      }
+    } else {
+      console.log('Thank you for a game. Your prize is: ' + prize + '$');
+      isPlaying = confirm('Are you whant to continue a game?');
+      gameCount = 0;
+    }
 
     gameCount++;
   }
-
-  console.log('Thank you for a game. Your prize is: ' + prize + '$');
 } else {
   console.log('You did not become a millionaire');
 }
