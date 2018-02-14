@@ -1,3 +1,3 @@
 function reverseNumber(val) {
-  return Number((val / Math.abs(val)) * Math.abs(val).toString().split("").reverse().join(""));
+  return Number(Math.abs(val).toString().split("").reverse().join("")) * Math.abs(val) / val;
 }
