@@ -1,0 +1,3 @@
+function decypherPhrase(obj, str) {
+
+}

@@ -1,0 +1,3 @@
+function getFilteredArray(arr, func) {
+
+}

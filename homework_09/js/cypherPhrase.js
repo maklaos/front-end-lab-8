@@ -1,0 +1,3 @@
+function cypherPhrase(obj, str) {
+
+}
