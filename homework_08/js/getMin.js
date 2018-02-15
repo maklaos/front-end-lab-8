@@ -1,7 +1,7 @@
 function getMin() {
-  let min = arguments[0];
+  let min = Infinity;
 
-  for (let i = 1; i < arguments.length; i++) {
+  for (let i = 0; i < arguments.length; i++) {
     if (arguments[i] < min) {
       min = arguments[i];
     }
