@@ -33,3 +33,6 @@ var movies = [
   "rating": 4.0,
   "bookmark": [{time: 65876586}]
 }];
+
+console.log('\ncollectIds');
+console.log(collectIds(movies));
