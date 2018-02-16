@@ -1,10 +1,11 @@
 function getTransformedArray(arr, func) {
-  return arr.map(func);
-}
+  let transformedArray = [];
+  let i = 0;
 
-//test
-function increment(num) {
-  return num + 1;
+  forEach(arr, function(num) {
+    transformedArray[i] = func(num);
+    i++;
+  });
+
+  return transformedArray;
 }
-console.log('\ngetTransformedArray:');
-console.log(getTransformedArray([1, 7, 20], increment));

@@ -1,8 +1,6 @@
 function decypherPhrase(obj, str) {
-
+  forEach(Object.keys(obj), function(key){
+    obj[obj[key]] = key;
+  });
+  return cypherPhrase(obj, str);
 }
-
-//test
-console.log('\ndecypherPhrase');
-var charactersMap = {a: 'o', c: 'd', t: 'g'}
-console.log(decypherPhrase(charactersMap, 'mewkiggy dog'));

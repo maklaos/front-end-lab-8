@@ -1,8 +1,5 @@
 function cypherPhrase(obj, str) {
-
+  return getTransformedArray(str, function(num){
+    return obj[num] ? obj[num] : num;
+  }).join('');
 }
-
-//test
-console.log('\ncypherPhrase');
-var charactersMap = {a: 'o', c: 'd', t: 'g'}
-console.log(cypherPhrase(charactersMap, 'kitty cat'));

@@ -1,10 +1,13 @@
 function getFilteredArray(arr, func) {
-  return arr.filter(func);
-}
+  let filteredArray = [];
+  let i = 0;
 
-//test
-function predicateFunction(num) {
-  return num > 3;
+  forEach(arr, function(num) {
+    if (func(num)) {
+      filteredArray[i] = num;
+      i++;
+    }
+  });
+
+  return filteredArray;
 }
-console.log('\ngetFilteredArray:');
-console.log(getFilteredArray([1, 7, 20], predicateFunction));
