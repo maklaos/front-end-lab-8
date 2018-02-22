@@ -51,8 +51,8 @@ function fighter(info) {
       opponent.getStats().hp -= stats.attack;
 
       if (opponent.getStats().hp <= 0) {
-        opponent.getCombatHistory().loses += 1;
-        CombatHistory.win += 1;
+        opponent.getCombatHistory().loses ++;
+        CombatHistory.win ++;
       }
 
       return true;
