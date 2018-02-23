@@ -1,2 +1,22 @@
 /* Your styles goes here */
 
+.visible{
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+div ul li ul {
+  display: none;
+}
+
+.material-icons{
+  color: #bcbcbc;
+}
+
+.material-icons.folder{
+  color: #edbc0c;
+}
