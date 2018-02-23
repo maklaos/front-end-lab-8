@@ -13,17 +13,17 @@ function CreateTree(structure, node){
     var li = document.createElement('li');
     ul.appendChild(li);
 
-    var span = document.createElement('span');
-    li.append(span);
+    var div = document.createElement('div');
+    li.append(div);
 
     var icon = document.createElement('i');
     icon.classList.add('material-icons');
 
-    span.appendChild(icon);
-    span.append(structure[i].title);
+    div.appendChild(icon);
+    div.append(structure[i].title);
 
     if (structure[i].folder) {
-      span.setAttribute('onclick','toggleVisible(this)');
+      div.setAttribute('onclick','toggleVisible(this)');
       icon.innerHTML = "folder";
       icon.classList.add('folder');
 
