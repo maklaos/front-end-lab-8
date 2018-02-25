@@ -18,9 +18,11 @@ function CreateTree(structure, node){
 
     var icon = document.createElement('i');
     icon.classList.add('material-icons');
-
     div.appendChild(icon);
-    div.append(structure[i].title);
+
+    var span = document.createElement('span');
+    span.append(structure[i].title);
+    div.appendChild(span);
 
     if (structure[i].folder) {
       div.setAttribute('onclick','toggleVisible(this)');
@@ -35,7 +37,6 @@ function CreateTree(structure, node){
 
         var li = document.createElement('li');
         li.innerHTML = 'Folder is empty';
-
         ul.appendChild(li);
       }
     } else {
@@ -44,15 +45,16 @@ function CreateTree(structure, node){
   }
 }
 
-function toggleVisible(el){
-  el.parentElement.childNodes[1].classList.toggle('visible');
+function toggleVisible(el) {
+  var folderImage = el.childNodes[0];
+  var children = el.parentElement.childNodes[1];
 
-  var folder = el.childNodes[0];
+  children.classList.toggle('visible');
 
-  if (folder.innerHTML == "folder") {
-    folder.innerHTML = "folder_open";
+  if (folderImage.innerHTML === "folder") {
+    folderImage.innerHTML = "folder_open";
   } else {
-    folder.innerHTML = "folder";
+    folderImage.innerHTML = "folder";
   }
 }
 
