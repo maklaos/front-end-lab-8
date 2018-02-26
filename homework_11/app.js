@@ -37,6 +37,7 @@ function CreateTree(structure, node){
 
         var li = document.createElement('li');
         li.innerHTML = 'Folder is empty';
+        li.classList.add('italic');
         ul.appendChild(li);
       }
     } else {

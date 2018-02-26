@@ -10,6 +10,10 @@ ul {
   cursor: pointer;
 }
 
+li div:hover{
+  background-color: #f0f0f0;
+}
+
 div ul li ul {
   display: none;
 }
@@ -24,4 +28,8 @@ div ul span {
 
 .material-icons.folder{
   color: #edbc0c;
+}
+
+.italic{
+  font-style: italic;
 }
